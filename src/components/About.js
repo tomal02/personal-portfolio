@@ -11,9 +11,10 @@ const About = () => {
             I'm a full stack developer.
           </h1>
           <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+            I studied at Makers Academy, a 16-week intensive coding bootcamp,
+            and I've just left my first role in the industry. I'm looking for my
+            next challenge, I'm open to remote work and I'm available to start
+            immediately, so why not get in touch?
           </p>
           <div className="flex justify-center">
             <a
