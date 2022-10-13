@@ -1,4 +1,6 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
   const [name, setName] = React.useState('');
@@ -15,13 +17,34 @@ const Contact = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', name, email, message }),
-    })
-      .then(() => alert('Message sent!'))
-      .catch((error) => alert(error));
+    console.log(process.env.REACT_APP_USER_ID);
+    console.log(process.env.REACT_APP_TEMPLATE_ID);
+    console.log(process.env.REACT_APP_SERVICE_ID);
+    console.log(e.target);
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          Swal.fire({
+            icon: 'success',
+            title: 'Message Sent Successfully',
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          Swal.fire({
+            icon: 'error',
+            title: 'Ooops, something went wrong',
+            text: error.text,
+          });
+        }
+      );
   }
 
   return (
