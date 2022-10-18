@@ -17,6 +17,13 @@ const Navbar = () => {
           <a href="#skills" className="mr-5 hover:text-white">
             Skills
           </a>
+          <a
+            href="/tom-lee-cv6.pdf"
+            download="tom-lee-cv6"
+            className="mr-5 hover:text-white"
+          >
+            Download CV
+          </a>
         </nav>
         <a
           href="#contact"
