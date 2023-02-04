@@ -8,13 +8,10 @@ const About = () => {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Tom.
             <br className="hidden lg:inline-block" />
-            I'm a full stack developer.
+            I'm a frontend developer.
           </h1>
           <p className="mb-8 leading-relaxed">
-            I studied at Makers Academy, a 16-week intensive coding bootcamp,
-            and I've just left my first role in the industry. I'm looking for my
-            next challenge, I'm open to remote work and I'm available to start
-            immediately, so why not get in touch?
+            I previously attended Makers Academy, and I'm currently working as a frontend developer at <span className='text-teal-500'><a href='https://www.thortful.com/'>thortful</a></span>
           </p>
           <div className="flex justify-center">
             <a

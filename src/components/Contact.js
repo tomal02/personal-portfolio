@@ -96,7 +96,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Have a question or have some work for me? Feel free to reach out.
+            Have a question or want to collaborate? Send me a message and I'll get back to you as soon as possible.
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
