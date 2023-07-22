@@ -34,11 +34,28 @@ export const projects = [
 ];
 
 export const skills = [
+  'React & Angular',
   'HTML & CSS',
-  'JavaScript & Frameworks (React, Express, Node)',
+  'Typescript / JS & Frameworks (Express, Node)',
   'Ruby & Rails',
-  'Python & Django',
-  'MongoDB',
-  'SQL',
+  'MongoDB, SQL',
   'Git',
 ];
+
+export const workplaces = [
+  {
+    companyName: 'thortful',
+    jobTitle: 'Front-End Engineer',
+    description: 'Working on the front-end of thortful.com, a marketplace for greeting cards.',
+    image: './thortful_logo.png',
+    link: 'https://www.thortful.com/',
+  },
+  {
+    companyName: 'Miesh',
+    jobTitle: 'Full-Stack Engineer',
+    description: 'Working on the full stack of the Miesh platform. A platform for integrations with multiple APIs.',
+    image: './miesh_logo.jpeg',
+    link: 'https://www.linkedin.com/company/mieshcloud/'
+    // link: 'https://www.miesh.io/',
+  },
+]
